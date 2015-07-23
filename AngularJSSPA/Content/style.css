@@ -1,0 +1,133 @@
+/* Styles go here */
+
+#toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+}
+
+#main {
+    min-height: 640px;
+}
+
+/* Styles go here */
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+html,
+body {
+  overflow-x: hidden!important;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  font-size: 14px;
+  -ms-scrollbar-face-color: silver;
+  scrollbar-face-color: silver;
+  -ms-scrollbar-shadow-color: white;
+  scrollbar-shadow-color: white;
+  -ms-scrollbar-highlight-color: white;
+  scrollbar-highlight-color: white;
+  -ms-scrollbar-3dlight-color: white;
+  scrollbar-3dlight-color: white;
+  -ms-scrollbar-darkshadow-color: white;
+  scrollbar-darkshadow-color: white;
+  -ms-scrollbar-track-color: white;
+  scrollbar-track-color: white;
+  -ms-scrollbar-arrow-color: white;
+  scrollbar-arrow-color: white;
+  /*background-image: url('../Content/Image/wallpaper.jpg');*/
+}
+
+.background {
+  background-color: silver;
+  color: red;
+}
+
+.hris-dashboard-primary {
+  font-family: Arial;
+  background-color: whitesmoke;
+  width: 340px;
+  height: 94px;
+  border-radius: 20px 10px 30px 0px;
+}
+
+.hris-dashboard-primary:hover {
+  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hris-dashboard-primary-icon {
+  background-color: #3c8dbc;
+  padding: 18px 25px 12px 25px;
+  position: absolute;
+  text-decoration: none;
+  color: lightblue;
+  font-size: 45px;
+  border-radius: 20px 0px 0px 0px;
+  border-right: 2px solid white;
+  border-right-style: groove;
+}
+
+.hris-dashboard-primary-body {
+  position: absolute;
+  padding-top: 5px;
+  margin-left: 110px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hris-dashboard-primary-note {
+  /*position: absolute;*/
+  color: none;
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 65px;
+  padding-top: 15px;
+  padding-right: 10px;
+  margin-left: 50px;
+}
+
+.hris-dashboard-primary-link {
+  position: absolute;
+  margin-left: 200px;
+  height: 60px;
+  width: 58px;
+  background-color: #367fa9;
+  text-align: center;
+  color: #00c0ef;
+  font-size: 20px;
+  border-radius: 0px 10px 10px 0px;
+  padding-top: 16px;
+  margin-top: -2px;
+  opacity: 0.6;
+}
+
+.help-block {
+    font-family: Calibri, 'Courier New';
+    background-color: #f56954;
+    color: white !important;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 1px 1px 20px 20px;
+    padding-left: 10px;
+    width: auto !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.no-border .table>tr>td .table>tbody>tr>td, .table>tbody>tr>th, .table>tr>th,.table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{
+    border-top: 0px none black !important;
+}

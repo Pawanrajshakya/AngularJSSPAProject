@@ -1,0 +1,61 @@
+<nav class="navbar" ng-class="{'navbar-default': !isUserIn, 'navbar-inverse': isUserIn}" style="border-radius: 0px;">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" style="color: #367fa9;" ng-href="#about">AngularJS SPA</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a ng-if="!isUserIn" ng-href="#signIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Sign In</a>
+                <a ng-if="isUserIn" href="#" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a>
+            </li>
+            <!--<li id="directive">
+        <a class="dropdown-toggle" data-toggle="dropdown" ng-href="#"><i></i> Directive<i class="caret"></i></a>
+        <ul class="dropdown-menu" id="directiveMenu">
+          <li><a href="#dExample1">Advance Directive</a></li>
+          <li><a href="#dExample2">Tranclusion</a></li>
+        </ul>
+      </li>
+      <li id="service">
+        <a class="dropdown-toggle" data-toggle="dropdown" ng-href="#"><i></i> Post<i class="caret"></i></a>
+        <ul class="dropdown-menu" id="serviceMenu">
+          <li><a href="#sExample1">View</a></li>
+          <li><a href="#sExample2">Remote API Service</a></li>
+        </ul>
+      </li>-->
+            <li><a ng-href="#home"><i class="glyphicon glyphicon-home"></i>&nbsp;Home</a>
+            </li>
+            <li><a ng-href="#about"><i class="glyphicon glyphicon-paperclip"></i>&nbsp;About</a>
+            </li>
+            <li><a ng-href="#contact"><i class="glyphicon glyphicon-earphone"></i>&nbsp;Contact</a>
+            </li>
+            <li><a ng-href="#post"><i class="glyphicon glyphicon-fire"></i>&nbsp;Post</a>
+            </li>
+            <li ng-if="loginUserName"><a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;{{loginUserName}}</a></li>
+        </ul>
+    </div>
+</nav>
+<script>
+    $('#directive').hover(function () {
+        $('#directiveMenu').stop(true, true).slideDown('fast');
+    },
+      function () {
+          $('#directiveMenu').stop(true, true).slideUp('slow');
+      }
+    );
+
+    $('#file').hover(function () {
+        $('#fileMenu').stop(true, true).slideDown('fast');
+    },
+      function () {
+          $('#fileMenu').stop(true, true).slideUp('slow');
+      }
+    );
+
+    $('#service').hover(function () {
+        $('#serviceMenu').stop(true, true).slideDown('fast');
+    },
+      function () {
+          $('#serviceMenu').stop(true, true).slideUp('slow');
+      }
+    );
+</script>

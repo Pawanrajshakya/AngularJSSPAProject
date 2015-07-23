@@ -1,0 +1,22 @@
+﻿<section class="col-md-4">
+    <table class="table no-border">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="post in posts.data">
+                <td>{{post.id}}</td>
+                <td>{{post.title}}</td>
+                <td>
+                    <a href="#" class="fa fa-trash-o" ng-click="delete(post.id)"></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section class="col-md-8">
+</section>

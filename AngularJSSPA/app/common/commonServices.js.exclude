@@ -1,0 +1,34 @@
+(function() {
+  angular.module('common', [])
+    .factory('currentUser', function($localStorage, $rootScope) {
+      var profile = {
+        isLoggedIn: false,
+        username: '',
+        token: ''
+      };
+
+      return {
+
+        setProfile: function(username, token) {
+          profile.username = username;
+          profile.token = token;
+          profile.isLoggedIn = true;
+          
+          $rootScope.$broadcast('user-changed');
+        },
+
+        getProfile: function() {
+          return profile;
+        },
+
+        clearProfile: function() {
+          profile.username = null;
+          profile.token = null;
+          profile.isLoggedIn = false;
+          //console.log($localStorage.token);
+          //delete $localStorage.token;
+          //console.log($localStorage.token);
+        },
+      }
+    });
+})();
